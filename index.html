@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Styled Table</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 50px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f2f7;
+        }
+
+        .table-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            /* ធ្វើឱ្យជ្រុង table ជាមូល */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 480px;
+        }
+
+        thead {
+            background: #4caf50;
+            color: #fff;
+        }
+
+        th,
+        td {
+            padding: 18px 20px;
+            text-align: left;
+        }
+
+        th {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        td {
+            font-size: 18px;
+            color: #444;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* ជួរសសលាប់ពណ៌ប្រផេះ */
+        tbody tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        /* ទទឹងជួរឈរ */
+        th:nth-child(1),
+        td:nth-child(1) {
+            width: 45%;
+        }
+
+        th:nth-child(2),
+        td:nth-child(2) {
+            width: 20%;
+        }
+
+        th:nth-child(3),
+        td:nth-child(3) {
+            width: 35%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>28</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>Mary Smith</td>
+                    <td>34</td>
+                    <td>UK</td>
+                </tr>
+                <tr>
+                    <td>Linda Johnson</td>
+                    <td>25</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>Linda Johnson</td>
+                    <td>25</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>Linda Johnson</td>
+                    <td>25</td>
+                    <td>Canada</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
